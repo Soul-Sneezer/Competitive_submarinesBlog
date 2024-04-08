@@ -88,6 +88,7 @@ nav a
 	font-size: 32px;
 	color: white;
 	text-decoration: none;
+	padding-left: 10px;
 }
 
 header
@@ -131,8 +132,12 @@ nav button
 {
 	padding-left: 1vh;
 }
-@media (min-width: 120em)
+@media (min-width: 1080px)
 {
+	.hidden
+	{
+		display: none;
+	}
 nav .dropbtn {
 	font-family: Sagona Arial;
 	display: inline-flex;
@@ -168,9 +173,12 @@ nav .dropdown-content {
 }
 }
 
-@media max-width(80em)
+@media (max-width:1080px)
 {
-
+	.dropdown
+	{
+		display: none;
+	}
 }
 .post
 {
