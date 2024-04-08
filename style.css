@@ -131,7 +131,7 @@ nav button
 {
 	padding-left: 1vh;
 }
-@media (min-width: 80em)
+@media (min-width: 120em)
 {
 nav .dropbtn {
 	font-family: Sagona Arial;
