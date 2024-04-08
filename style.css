@@ -131,6 +131,8 @@ nav button
 {
 	padding-left: 1vh;
 }
+@media (min-width: 80em)
+{
 nav .dropbtn {
 	font-family: Sagona Arial;
 	display: inline-flex;
@@ -139,9 +141,6 @@ nav .dropbtn {
   background-color: #242430;
   color: white;
   border: 0px none;
-}
-
-.dropdown {
 }
 
 nav .dropdown-content {
@@ -167,7 +166,12 @@ nav .dropdown-content {
 	display: inline-flex;
 	flex-flow: row space-between;
 }
+}
 
+@media max-width(80em)
+{
+
+}
 .post
 {
 	border: 1px solid;
