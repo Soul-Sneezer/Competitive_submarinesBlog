@@ -68,7 +68,7 @@ header
 
 header img
 {
-	border: 1px solid #444444;
+/*	border: 1px solid #444444;*/
 	width:4vh;
 	float:left;
 }
@@ -93,7 +93,7 @@ nav a
 
 header
 {
-	border: 1px solid #111111;
+/*	border: 1px solid #111111;*/
 	background-color: #242430;
 }
 
@@ -123,7 +123,7 @@ footer {
 	margin-top: auto;
 	font-size: 16px;
 	color: white;
-	border: 1px solid #111111;
+/*	border: 1px solid #111111;*/
   background-color: #222222;
   padding: 10px;
 }
