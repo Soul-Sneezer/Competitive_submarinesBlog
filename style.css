@@ -132,12 +132,7 @@ nav button
 {
 	padding-left: 1vh;
 }
-@media (min-width: 1080px)
-{
-	.hidden
-	{
-		display: none;
-	}
+
 nav .dropbtn {
 	font-family: Sagona Arial;
 	display: inline-flex;
@@ -171,6 +166,13 @@ nav .dropdown-content {
 	display: inline-flex;
 	flex-flow: row space-between;
 }
+@media (min-width: 1080px)
+{
+	.hidden
+	{
+		display: none;
+	}
+
 }
 
 @media (max-width:1080px)
