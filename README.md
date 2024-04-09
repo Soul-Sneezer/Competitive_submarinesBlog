@@ -1,7 +1,7 @@
 # Competitive_submarinesBlog
 A place to write essays about various things that interest me.
 
-Hosted at: competitivesubmarines.com.
+Hosted at: [competitivesubmarines.com](competitivesubmarines.com)
 
 Things left to do:   -- add mobile support( :') )
                      -- adding an animation for the sliding window
