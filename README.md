@@ -4,7 +4,7 @@ A place to write essays about various things that interest me.
 Hosted at: [competitivesubmarines.com](https://competitivesubmarines.com/)
 
 Things left to do:   
-- add mobile support( :') )
+- add mobile support :')
 
 - adding an animation for the sliding window
 
