@@ -57,11 +57,74 @@ table {
 
 :root
 {
-    --sub1main: #e30449;
-    --sub1second: #c6003d;
-    --sub1lshade: #ef689e;
-    --sub1dshade: #a10532;
-    --sub1detail: #e92d77;
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 20%;
+    --sub_posx: 20%;
+    --sub_posz: 4;
+}
+
+.second_sub
+{
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 70%;
+    --sub_posx: 70%;
+    --sub_posz: 2;
+}
+
+.third_sub
+{
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 30%;
+    --sub_posx: 50%;
+    --sub_posz: 3;
+}
+
+.fourth_sub
+{
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 90%;
+    --sub_posx: 30%;
+    --sub_posz: 1;
+}
+
+.fifth_sub
+{
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 60%;
+    --sub_posx: 40%;
+    --sub_posz: 0;
+}
+
+.second_sub
+{
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 70%;
+    --sub_posx: 70%;
+
 }
 
 header img
@@ -94,7 +157,7 @@ header
     align-items: center;
     background: #08003b;
     padding: 5px;
-    z-index: 1;
+    z-index: 100;
 }
 
 main
@@ -217,11 +280,12 @@ body {
 
 .submarine__container {
     	position: absolute;
-    	top: 50%;
-    	left: 50%;
+    	top: var(--sub_posx);
+    	left: var(--sub_posy);
     	width: 400px;
     	height: 200px;
     	transform: translate(-50%, -50%);
+      z-index: var(--sub_posz);
 }
 
 .submarine__body {
@@ -230,7 +294,7 @@ body {
     	left: 50%;
     	width: 250px;
     	height: 80px;
-    	background: var(--sub1main);
+    	background: var(--sub_main);
     	border-radius: 50px;
     	transform: translate(-50%, -50%);
 }
@@ -283,7 +347,7 @@ body {
     	width: 90px;
     	height: 50px;
     	transform: translate(-50%, -100%);
-    	background:var(--sub1second);
+    	background:var(--sub_second);
     	clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
 }
 
@@ -291,7 +355,7 @@ body {
    	position: absolute;
     	width: 160%;
     	height: 10%;
-    	background: var(--sub1dshade);
+    	background: var(--sub_dshade);
     	border-radius: 5px;
 }
 
@@ -346,7 +410,7 @@ body {
     	height: 10px;
     	border-radius: 5px;
     	transform: translate(-50%, -50%);
-    	background: var(--sub1dshade);
+    	background: var(--sub_dshade);
 }
 
 .submarine__shadow-light {
@@ -357,7 +421,7 @@ body {
     	height: 6px;
     	border-radius: 5px;
     	transform: translate(-50%, -50%);
-    	background: var(--sub1lshade);
+    	background: var(--sub_lshade);
 }
 
 .submarine__shadow-arcLight {
@@ -376,8 +440,8 @@ body {
     	left: 40%;
     	width: 20px;
     	height: 50px;
-    	border-right: 10px solid var(--sub1detail);
-    	border-top: 10px solid var(--sub1main);
+    	border-right: 10px solid var(--sub_detail);
+    	border-top: 10px solid var(--sub_main);
     	border-left: 0px solid transparent;
     	border-bottom: 0px solid transparent;
     	border-top-right-radius: 10px;
