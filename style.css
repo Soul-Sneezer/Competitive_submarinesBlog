@@ -68,7 +68,7 @@ header
 
 header img
 {
-/*	border: 1px solid #444444;*/
+	/*border: 1px solid #444444;*/
 	width:4vh;
 	float:left;
 }
@@ -93,7 +93,7 @@ nav a
 
 header
 {
-/*	border: 1px solid #111111;*/
+	/* border: 1px solid #111111; */
 	background-color: #242430;
 }
 
@@ -166,25 +166,27 @@ nav .dropdown-content {
 	display: inline-flex;
 	flex-flow: row space-between;
 }
-@media (min-width: 1080px)
+@media (min-width: 1360px)
 {
 	.hidden
 	{
 		display: none;
 	}
 
+	.post
+	{
+		border-width: 0;
+		width: 50%;
+	}
+
 }
 
-@media (max-width:1080px)
+@media (max-width:1360px)
 {
 	.dropdown
 	{
 		display: none;
 	}
-}
-.post
-{
-	border: 1px solid;
 }
 
 h2
