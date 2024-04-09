@@ -52,7 +52,7 @@ table {
 @font-face
 {
     font-family: Sagona;
-    src: "./fonts/SAGONABOOK.TTF";
+    src: url('./fonts/SAGONABOOK.TTF');
 }
 
 :root
@@ -66,8 +66,8 @@ table {
 
 header img
 {
-   height: 40px;
-    float left;
+    height: 40px;
+    float: left;
 }
 
 nav
@@ -121,48 +121,7 @@ body {
     overflow-x: hidden;
     }
 
-
-nav button
-{
-	padding-left: 1vh;
-}
-
-nav .dropbtn {
-	font-family: Sagona Arial;
-	display: inline-flex;
-	align-items: center;
-	font-size: 32px;
-  background-color: #08003b;
-  color: white;
-  border: 0px none;
-}
-
-nav .dropdown-content {
-	align-items: center;
-  display: none;
-  position: absolute;
-  background-color: #08003b;
-  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
- 	z-index: 1;
-}
-.dropdown-content a {
-	padding-top: 7px;
-	padding-left: 10px;
-	font-family: Sagona Arial;
-	align-text: center;  
-	color: white;
-  text-decoration: none;
-  display: block;
-  flex-direction: column;
-}
-
-.dropdown:hover .dropdown-content 
-{
-	display: inline-flex;
-	flex-flow: row space-between;
-}
-
-@media (min-width: 1360px)
+@media screen and (min-width: 1360px)
 {
 	.hidden
 	{
@@ -173,19 +132,17 @@ nav .dropdown-content {
 	{
 		background: #303030;
 		color: white;
-		/*border: 2px solid white;*/
 		border-radius: 10px;
 		margin: auto;
 		width: 60%;
 		margin-top: 10px;
 	}
-	
-	#last
+
+  #last
 	{
 		margin-bottom: 10px;
-	}
-		
-	}
+  }
+
 	div .post
 	{
 		min-height: 20vh;
@@ -196,14 +153,53 @@ nav .dropdown-content {
 		text-align: center;
 	}
 
+    nav button
+    {
+      padding-left: 1vh;
+    }
+
+    nav .dropbtn {
+      font-family: Sagona Arial;
+      display: inline-flex;
+      align-items: center;
+      font-size: 32px;
+      background-color: #08003b;
+      color: white;
+      border: 0px none;
+    }
+
+    nav .dropdown-content {
+      align-items: center;
+      display: none;
+      position: absolute;
+      background-color: #08003b;
+      /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+      z-index: 1;
+    }
+    .dropdown-content a {
+      padding-top: 7px;
+      padding-left: 10px;
+      font-family: Sagona Arial;
+      text-align: center;  
+      color: white;
+      text-decoration: none;
+      display: block;
+      flex-direction: column;
+    }
+
+    .dropdown:hover .dropdown-content 
+    {
+      display: inline-flex;
+      justify-content: space-between;
+    }
 }
 
-@media (max-width:1360px)
+@media (max-width: 1360px)
 {
-	.dropdown
-	{
-		display: none;
-	}
+    .dropdown
+    {
+        display: none;
+    }
 }
 
 .seaContainer {
