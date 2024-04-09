@@ -54,7 +54,10 @@ table {
     font-family: Sagona;
     src: url('./fonts/SAGONABOOK.TTF');
 }
-
+#desc
+{
+    font-size: 24px;
+}
 :root
 {
     --sub_size: 1;
@@ -132,11 +135,11 @@ table {
 .about_sub
 {
     --sub_size: 4;
-    --sub_main: #e30449;
-    --sub_second: #c6003d;
-    --sub_lshade: #ef689e;
-    --sub_dshade: #a10532;
-    --sub_detail: #e92d77;
+    --sub_main: #111111;
+    --sub_second: #121212;
+    --sub_lshade: #222222;
+    --sub_dshade: #171717;
+    --sub_detail: #232323;
     --sub_posy: 50%;
     --sub_posx: 40%;
     --sub_posz: 4;
