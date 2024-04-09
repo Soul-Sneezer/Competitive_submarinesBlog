@@ -6,6 +6,6 @@ Hosted at: [competitivesubmarines.com](https://competitivesubmarines.com/)
 Things left to do:   
 - add mobile support( :') )
 
-  - adding an animation for the sliding window
+- adding an animation for the sliding window
 
-    - some finishing touches(such as finishing that about section, among other things)
+- some finishing touches(such as finishing that about section, among other things)
