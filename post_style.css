@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**********************************************/
+@font-face
+{
+    font-family: Sagona;
+    src: url('./fonts/SAGONABOOK.TTF');
+}
+
+html
+{
+	color:white;
+}
+
+header img
+{
+    height: 40px;
+    float: left;
+}
+
+nav
+{
+    display: flex;
+    padding-left: 1vh;
+    width: 30vh;
+}
+
+nav a
+{
+    font-family: Sagona Arial;
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    background: #242930;
+    padding: 5px;
+    z-index: 100;
+}
+
+h1
+{
+	font-size: 32px;
+	padding: 10px;
+	text-align: center;
+}
+
+p
+{
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #cccccc;
+}
+
+li
+{
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #cccccc;
+
+}
+
+main
+{
+    min-height: calc(100vh - 30px);
+		background: #353b43;
+}
+
+footer
+{
+		min-height:20px;
+    font-family: Sagona Arial;
+    margin-top: auto;
+    font-size: 16px;
+    color: white;
+    background-color: #242930;
+    padding: 10px;
+    z-index: 1;
+}
+
+@media screen and (min-width: 1360px)
+{
+	.hidden
+	{
+		display: none;
+	}
+
+	article .post
+	{
+		background: #242930;
+		color: white;
+		border-radius: 10px;
+		margin: auto;
+		width: 60%;
+		margin-top: 10px;
+	}
+
+  #last
+	{
+		margin-bottom: 10px;
+  }
+
+	div .post
+	{
+		min-height: 20vh;
+	}
+	article .post h2
+	{
+		padding-top: 10px;
+		text-align: center;
+	}
+
+    nav button
+    {
+      padding-left: 1vh;
+    }
+
+    nav .dropbtn {
+      font-family: Sagona Arial;
+      display: inline-flex;
+      align-items: center;
+      font-size: 32px;
+      background-color: #242930;
+      color: white;
+      border: 0px none;
+    }
+
+    nav .dropdown-content {
+      align-items: center;
+      display: none;
+      position: absolute;
+      background-color: #242930;
+      /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+      z-index: 1;
+    }
+    .dropdown-content a {
+      padding-top: 5px;
+      padding-left: 10px;
+      font-family: Sagona Arial;
+      text-align: center;  
+      color: white;
+      text-decoration: none;
+      display: block;
+      flex-direction: column;
+    }
+
+	 .dropdown:hover .dropdown-content 
+    {
+      display: inline-flex;
+      justify-content: space-between;
+    }
+}
+
+@media (max-width: 1360px)
+{
+    .dropdown
+    {
+        display: none;
+    }
+}
+

@@ -57,6 +57,7 @@ table {
 
 :root
 {
+    --sub_size: 1;
     --sub_main: #e30449;
     --sub_second: #c6003d;
     --sub_lshade: #ef689e;
@@ -115,6 +116,46 @@ table {
     --sub_posz: 0;
 }
 
+.search_sub
+{
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 50%;
+    --sub_posx: 50%;
+    --sub_posz: 4;
+
+}
+
+.about_sub
+{
+    --sub_size: 4;
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 50%;
+    --sub_posx: 40%;
+    --sub_posz: 4;
+
+}
+
+.friends_sub
+{
+    --sub_main: #e30449;
+    --sub_second: #c6003d;
+    --sub_lshade: #ef689e;
+    --sub_dshade: #a10532;
+    --sub_detail: #e92d77;
+    --sub_posy: 90%;
+    --sub_posx: 70%;
+    --sub_posz: 4;
+
+}
+
 header img
 {
     height: 40px;
@@ -133,7 +174,7 @@ nav a
     font-family: Sagona Arial;
     display: inline-flex;
     align-items: center;
-    font-size: 32px;
+    font-size: 24px;
     color: white;
     text-decoration: none;
     padding-left: 10px;
@@ -156,6 +197,7 @@ main
 
 footer
 {
+    min-height: 20px;
     font-family: Sagona Arial;
     margin-top: auto;
     font-size: 16px;
@@ -228,7 +270,7 @@ body {
       z-index: 1;
     }
     .dropdown-content a {
-      padding-top: 7px;
+      padding-top: 5px;
       padding-left: 10px;
       font-family: Sagona Arial;
       text-align: center;  
@@ -270,8 +312,8 @@ body {
     	position: absolute;
     	top: var(--sub_posx);
     	left: var(--sub_posy);
-    	width: 400px;
-    	height: 200px;
+    	width: calc(400px * var(--sub_size));
+    	height: calc(200px * var(--sub_size));
     	transform: translate(-50%, -50%);
       z-index: var(--sub_posz);
 }
@@ -280,19 +322,26 @@ body {
     	position: absolute;
     	top: 50%;
     	left: 50%;
-    	width: 250px;
-    	height: 80px;
+    	width: calc(250px * var(--sub_size));
+    	height: calc(80px * var(--sub_size));
     	background: var(--sub_main);
-    	border-radius: 50px;
+    	border-radius: calc(50px * var(--sub_size));
     	transform: translate(-50%, -50%);
+}
+
+.submarine__body p
+{
+    padding: 10%;
+    color: white;
+    text-align: center;
 }
 
 .submarine__propeller {
     	position: absolute;
     	left: 80%;
     	top: 50%;
-    	width: 30px;
-    	height: 50px;
+    	width: calc(30px * var(--sub_size));
+    	height: calc(50px * var(--sub_size));
     	transform: translate(0%, -50%);
     	perspective: 600px;
 }
@@ -332,8 +381,8 @@ body {
     	position: absolute;
     	top: 40%;
     	left: 50%;
-    	width: 90px;
-    	height: 50px;
+    	width: calc(90px * var(--sub_size));
+    	height: calc(50px * var(--sub_size));
     	transform: translate(-50%, -100%);
     	background:var(--sub_second);
     	clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
@@ -366,11 +415,11 @@ body {
 }
 
 .submarine__window {
-    	width: 25px;
-    	height: 25px;
+    	width: calc(25px * var(--sub_size));
+    	height: calc(25px * var(--sub_size));
     	border-radius: 100%;
     	background-image: linear-gradient(45deg, #c9e5d9, #fff);
-    	border: 8px solid var(--sub_dshade);
+    	border: calc(8px * var(--sub_size)) solid var(--sub_dshade);
     	z-index: 10;
     	animation: shadow-change 1s linear infinite;
 }
@@ -394,9 +443,9 @@ body {
     	position: absolute;
     	left: 70%;
     	top: 50%;
-    	width: 70px;
-    	height: 10px;
-    	border-radius: 5px;
+    	width: calc(70px * var(--sub_size));
+    	height: calc(10px * var(--sub_size));
+    	border-radius: calc(5px * var(--sub_size));
     	transform: translate(-50%, -50%);
     	background: var(--sub_dshade);
 }
@@ -405,9 +454,9 @@ body {
     	position: absolute;
     	left: 35%;
     	top: 13%;
-    	width: 100px;
-    	height: 6px;
-    	border-radius: 5px;
+    	width: calc(100px * var(--sub_size));
+    	height: calc(6px * var(--sub_size));
+    	border-radius: calc(5px * var(--sub_size));
     	transform: translate(-50%, -50%);
     	background: var(--sub_lshade);
 }
@@ -416,8 +465,8 @@ body {
     	position: absolute;
     	top: 65%;
     	left: 80%;
-    	width: 20px;
-    	height: 20px;
+    	width: calc(20px * var(--sub_size));
+    	height: calc(20px * var(--sub_size));
     	border-radius: 50%;
     	background: var(--sub_lshade);
 }
@@ -426,10 +475,10 @@ body {
     	position: absolute;
     	top: 0%;
     	left: 40%;
-    	width: 20px;
-    	height: 50px;
-    	border-right: 10px solid var(--sub_detail);
-    	border-top: 10px solid var(--sub_main);
+    	width: calc(20px * var(--sub_size));
+    	height: calc(50px * var(--sub_size));
+    	border-right: calc(10px * var(--sub_size)) solid var(--sub_detail);
+    	border-top: calc(10px * var(--sub_size)) solid var(--sub_main);
     	border-left: 0px solid transparent;
     	border-bottom: 0px solid transparent;
     	border-top-right-radius: 10px;
@@ -439,8 +488,8 @@ body {
     	position: absolute;
     	left: 40%;
     	top: 0%;
-    	width: 5px;
-    	height: 15px;
+    	width: calc(5px * var(--sub_size));
+    	height: calc(15px * var(--sub_size));
     	background: #f7ac08;
     	transform: translate(-50%, -15%);
 }
@@ -449,8 +498,8 @@ body {
     	position: absolute;
     	top: 0%;
     	left: 0%;
-    	width: 500px;
-    	height: 100px;
+    	width: calc(500px * var(--sub_size));
+    	height: calc(100px * var(--sub_size));
     	background: linear-gradient(to left, #817E97, #130560);
     	clip-path: polygon(0% 0%, 50% 45%, 50% 55%, 0% 100%);
     	transform: translate(-18%, -45%);
@@ -459,16 +508,16 @@ body {
 .bubbles__container {
     	position: absolute;
     	top: 50%;
-    	left: 55%;
-    	width: 100px;
-    	height: 50px;
+    	left: 65%;
+    	width: calc(100px * var(--sub_size));
+    	height: calc(50px * var(--sub_size));
     	transform: translate(100%, -50%);
 }
 
 .bubbles {
     	position: absolute;
-    	width: 10px;
-    	height: 10px;
+    	width: calc(10px * var(--sub_size));
+    	height: calc(10px * var(--sub_size));
     	border-radius: 100%;
     	left: 5%;
     	top: 5%;
