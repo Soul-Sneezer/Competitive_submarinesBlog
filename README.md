@@ -6,6 +6,6 @@ Hosted at: [competitivesubmarines.com](https://competitivesubmarines.com/)
 Things left to do:   
 - add mobile support :')
 - add description/title over submarines
-- adding an animation for the sliding window
+- add an animation for the sliding window
 
 - some finishing touches(such as finishing that about section, among other things)
