@@ -97,19 +97,15 @@ header
 	background-color: #222222;
 }
 
-main
-{
-	min-height:100%;
-}
-
 html {
   height: 100%;
 }
 
-body {
+main {
 	background-image: linear-gradient(#424250, #303030);	
-	background-size: auto 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	min-height: 100%;
 	margin: 0px;
 	padding: 0px;
 }
@@ -186,6 +182,10 @@ nav .dropdown-content {
 		margin-top: 10px;
 	}
 
+	#last
+	{
+		margin-bottom: 10px;
+	}
 	main
 	{
 		display: flex;
