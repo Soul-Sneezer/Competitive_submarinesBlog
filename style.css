@@ -433,13 +433,13 @@ body {
 
     .about_sub
     {
-        --sub_size: 3;
+        --sub_size: 2;
         margin-top: 500px;
         margin-bottom: 0;
     }
     #desc
     {
-        font-size: 18px;
+        font-size: 12px;
     }
     .friends_sub
     {
