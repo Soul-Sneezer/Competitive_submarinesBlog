@@ -58,6 +58,12 @@ table {
 {
     font-size: 24px;
 }
+
+html *
+{
+    font-family: Sagona, Arial;
+}
+
 :root
 {
     --sub_size: 1;
@@ -174,7 +180,7 @@ nav
 
 nav a
 {
-    font-family: Sagona Arial;
+    font-family: Sagona, Arial;
     display: inline-flex;
     align-items: center;
     font-size: 24px;
@@ -201,7 +207,7 @@ main
 footer
 {
     min-height: 20px;
-    font-family: Sagona Arial;
+    font-family: Sagona, Arial;
     margin-top: auto;
     font-size: 16px;
     color: white;
@@ -255,7 +261,7 @@ body {
     }
 
     nav .dropbtn {
-      font-family: Sagona Arial;
+      font-family: Sagona, Arial;
       display: inline-flex;
       align-items: center;
       font-size: 32px;
@@ -273,9 +279,9 @@ body {
       z-index: 1;
     }
     .dropdown-content a {
-      padding-top: 5px;
+      padding-top: 4px;
       padding-left: 10px;
-      font-family: Sagona Arial;
+      font-family: Sagona, Arial;
       text-align: center;  
       color: white;
       text-decoration: none;
@@ -290,47 +296,47 @@ body {
     }
 
     .ground__container {
-    position: absolute;
-    top: 75%;
-    left: 0%;
-    width: 100%;
-    height: 25%;
-    background: #08003b;
-    margin-top: 20px;
-}
+        position: absolute;
+        top: 75%;
+        left: 0%;
+        width: 100%;
+        height: 25%;
+        background: #08003b;
+        margin-top: 20px;
+    }
 
-.ground1 {
-    top: 55%;
-    height: 50%;
-    background: #0c0051;
-}
+    .ground1 {
+        top: 55%;
+        height: 50%;
+        background: #0c0051;
+    }
 
-.ground2 {
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    height: 50%;
-    background: #08003b;
-}
+    .ground2 {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        height: 50%;
+        background: #08003b;
+    }
 
-.ground span {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-}
+    .ground span {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
 
-.ground1 span {
-    background: #0c0051;
-}
+    .ground1 span {
+        background: #0c0051;
+    }
 
-.ground2 span {
-    background: #08003b;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    transform: translateY(30%);
-}
+    .ground2 span {
+        background: #08003b;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        transform: translateY(30%);
+    }
 }
 
 .seaContainer {
