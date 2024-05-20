@@ -221,6 +221,7 @@ body {
     flex-direction: column;
     background: #130560;
     overflow-x: hidden;
+    max-width: 100%;
     }
 
 @media screen and (min-width: 1360px)
@@ -340,14 +341,15 @@ body {
 }
 
 .seaContainer {
-	display: flex;
-	padding: 0;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-	background: #130560;
-   	overflow-x: hidden; 
+	  display: flex;
+	  padding: 0;
+	  top: 0%;
+	  left: 0%;
+	  width: 100%;
+    height: 100%;
+	  background: #130560;
+    overflow-x: hidden; 
+    max-width: 100%;
 }
 
 .submarine__container {
