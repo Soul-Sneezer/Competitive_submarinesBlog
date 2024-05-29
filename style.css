@@ -678,6 +678,8 @@ body {
     	animation-delay: 1s;
 }
 
+@media (min-width: 1360px)
+{
 .up-1 {
     	left: 0%;
     	top: -2px;
@@ -797,7 +799,7 @@ body {
     	top: -40px;
     	animation: moveTheGroundRight 22s infinite linear;
 }
-
+}
 @keyframes shadow-change {
     	0%,
     	100% {
