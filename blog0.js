@@ -1,5 +1,5 @@
 function fetchJSONData() {
-	fetch("http://localhost:8000/post0.json")
+	fetch("https://competitivesubmarines.com/post0.json")
 							.then((res) => {
 									if (!res.ok) {
 											throw new Error
