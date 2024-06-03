@@ -1,15 +1,12 @@
 window.onload = function() {
-	var a = document.querySelectorAll("article")[0];
-	var par = document.createElement("p");
-	par.style.background = "#242930";
+	var a = document.querySelectorAll("article p")[0];
 	console.log(a)
 
 	var xhr = new XMLHttpRequest();
-	xhr.open("GET", "./content0.tex");
+	xhr.open("GET", "https://competitivesubmarines.com/posts_contents/content0.txt");
 	xhr.onreadystatechange = function() {
 		console.log(xhr.responseText);
-		par.innerHTML = xhr.responseText;
+		a.innerHTML = xhr.responseText;
 	}
 	xhr.send();
-	a.appendChild(par);
 }
