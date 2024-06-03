@@ -122,7 +122,7 @@ html *
     --sub_detail: #f9cd77;
     --sub_posy: 60%;
     --sub_posx: 40%;
-    --sub_posz: 0;
+    --sub_posz: 3;
 }
 
 .search_sub
