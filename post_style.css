@@ -172,7 +172,7 @@ footer
     }
 
     nav .dropbtn {
-      font-family: Sagona Arial;
+      font-family: Sagona, Arial;
       display: inline-flex;
       align-items: center;
       font-size: 32px;
@@ -181,29 +181,29 @@ footer
       border: 0px none;
     }
 
-    nav .dropdown-content {
+    .dropdown-content {
+        overflow:hidden;
       align-items: center;
-      display: none;
+      display: inline-block;
       position: absolute;
       background-color: #242930;
-      /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
       z-index: 1;
+      transition: all 0.5s;
+      max-width: 0;
     }
     .dropdown-content a {
-      padding-top: 5px;
+      padding-top: 6px;
       padding-left: 10px;
-      font-family: Sagona Arial;
       text-align: center;  
       color: white;
       text-decoration: none;
-      display: block;
-      flex-direction: column;
+      display: inline-block;
     }
-
-	 .dropdown:hover .dropdown-content 
+    .dropdown:hover .dropdown-content 
     {
       display: inline-flex;
       justify-content: space-between;
+      max-width:200px;
     }
 }
 
