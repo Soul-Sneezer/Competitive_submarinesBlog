@@ -1,3 +1,7 @@
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 function moveSub(sub, link)
 {
   var move = false;
@@ -56,6 +60,12 @@ window.onload  = function() {
 
 	var submarines = document.querySelectorAll(".submarine__container");
   var submarine_links = document.querySelectorAll(".submarine__container a")
+
+  for(var i = 0; i < submarines.length; i++)
+  {
+    submarines[i].style.top =  (submarines[i].getBoundingClientRect().y + getRandomInt(180) + 50) / window.screen.availHeight * 100 + "%"; 
+    submarines[i].style.left =  (submarines[i].getBoundingClientRect().x + getRandomInt(200) + 50) / window.screen.availWidth * 100 + "%"; 
+  }
 
   for(var i = 0; i < submarines.length; i++)
   {
