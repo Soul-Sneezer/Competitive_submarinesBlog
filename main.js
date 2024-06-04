@@ -1,20 +1,9 @@
 function moveSub(sub, link)
 {
   var move = false;
-  link.addEventListener('click', function(event) {
-    if(event.which == 2)
-      event.preventDefault();
-  }, true);
 
-
-  link.addEventListener('mousedown', function(event) {
-    if(event.which == 2)
-      event.preventDefault();
-  }, true);
-  
-  link.addEventListener('mouseup', function(event) {
-    if(event.which == 2)
-      event.preventDefault();
+  sub.addEventListener('click', function(event) {
+    window.location.href = "blog" + link + ".html";
   }, true);
 
   sub.addEventListener('mousedown', function(event) {
@@ -57,7 +46,7 @@ function moveSub(sub, link)
     {
       event.stopPropagation();
       event.preventDefault();
-      move = false;   
+      move = false;  
     }
   }, true);
 
@@ -67,11 +56,10 @@ window.onload  = function() {
 
 	var submarines = document.querySelectorAll(".submarine__container");
   var submarine_links = document.querySelectorAll(".submarine__container a")
-	var hold_time = 1000;
 
-	var sub = submarines[0];
-  var submarine_link = submarine_links[0];
- 
-  console.log(submarine_link);
-  moveSub(sub, submarine_link);		
+  for(var i = 0; i < submarines.length; i++)
+  {
+    submarine_links[i].replaceWith(...submarine_links[i].childNodes); 
+    moveSub(submarines[i], i);	
+  }
 }
