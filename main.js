@@ -13,9 +13,12 @@ function moveSub(sub, link)
   sub.addEventListener('mousedown', function(event) {
 			if(event.which == 2)
 			{
+        setTimeout(function() {
+
         event.stopPropagation();
         event.preventDefault();
-        move = true;
+                    move = true;
+        }, 1000);
 			}
 }, true);
 
@@ -64,8 +67,6 @@ window.onload  = function() {
 
   for(var i = 0; i < submarines.length; i++)
   {
-    submarines[i].style.top = (submarines[i].getBoundingClientRect().bottom + submarines[i].getBoundingClientRect().y) / 2 / window.screen.availHeight * 100 + getRandomInt(5) + "%"; 
-    submarines[i].style.left =  (submarines[i].getBoundingClientRect().right + submarines[i].getBoundingClientRect().x) / 2 / window.screen.availWidth * 100 + getRandomInt(5) + "%"; 
   }
 
   for(var i = 0; i < submarines.length; i++)

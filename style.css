@@ -135,6 +135,8 @@ html *
     --sub_posy: 50%;
     --sub_posx: 50%;
     --sub_posz: 4;
+
+    margin-bottom: 60%;
 }
 
 .search_sub .submarine__body
@@ -187,6 +189,7 @@ html *
     --sub_posx: 70%;
     --sub_posz: 3;
 
+    margin-bottom:15%;
 }
 
 header img
@@ -230,6 +233,7 @@ main
 
 footer
 {
+    position: relative;
     min-height: 20px;
     font-family: Sagona, Arial;
     margin-top: auto;
@@ -338,7 +342,7 @@ body {
     }
 
     .ground2 {
-        position: absolute;
+        position: inherit;
         top: 35%;
         width: 100%;
         height: 50%;
@@ -346,7 +350,7 @@ body {
     }
 
     .ground span {
-        position: absolute;
+        position: inherit;
         width: 60px;
         height: 60px;
         border-radius: 100%;
@@ -366,15 +370,14 @@ body {
 }
 
 .seaContainer {
-	  display: flex;
+    display:flex;
 	  padding: 0;
 	  top: 0%;
 	  left: 0%;
 	  width: 100%;
-    height: 100%;
+    min-height: 100%;
 	  background: #130560;
     overflow-x: hidden; 
-    max-height: 200%;
 }
 
 .submarine__container {
@@ -401,7 +404,6 @@ body {
 {
     .seaContainer
     {
-        display: flex;
         flex-direction: column;
     }
 
@@ -416,11 +418,10 @@ body {
         display: none;
     }
     .ground__container {
-        position: absolute;
+        position: relative;
         top:90%;
         left: 0%;
         width: 100%;
-        height: 100%;
         background: #08003b;
         margin-top: 10px;
     }
