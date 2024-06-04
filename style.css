@@ -77,7 +77,7 @@ html *
     --sub_posz: 4;
 }
 
-.second_sub
+#second_sub
 {
     --sub_main: #302469;
     --sub_second: #30205d;
@@ -89,7 +89,7 @@ html *
     --sub_posz: 2;
 }
 
-.third_sub
+#third_sub
 {
     --sub_main: #f3c449;
     --sub_second: #f6c03d;
@@ -101,7 +101,7 @@ html *
     --sub_posz: 3;
 }
 
-.fourth_sub
+#fourth_sub
 {
     --sub_main: #03a449;
     --sub_second: #06a03d;
@@ -113,7 +113,7 @@ html *
     --sub_posz: 1;
 }
 
-.fifth_sub
+#fifth_sub
 {
     --sub_main: #f39429;
     --sub_second: #f6903d;
