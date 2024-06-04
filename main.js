@@ -62,11 +62,19 @@ function moveSub(sub, link)
 
 window.onload  = function() {
 
-	var submarines = document.querySelectorAll(".submarine__container");
+	var submarines = document.querySelectorAll(".submarine__body");
+  var propellers = document.querySelectorAll(".submarine__propeller");
+  var bubbles = document.querySelectorAll(".bubbles__container");
   var submarine_links = document.querySelectorAll(".submarine__container a")
 
   for(var i = 0; i < submarines.length; i++)
   {
+    var rand1 = getRandomInt(30);
+    var rand2 = getRandomInt(30);
+    submarines[i].style.width = 200 + rand1 + "px";
+    submarines[i].style.height = 60 + rand2 + "px";
+    propellers[i].style.left = 300 + rand1 / 2 + "px";
+    bubbles[i].style.left = 250 + rand1 / 2 + "px";
   }
 
   for(var i = 0; i < submarines.length; i++)
