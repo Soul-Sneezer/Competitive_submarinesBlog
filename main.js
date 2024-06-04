@@ -63,8 +63,8 @@ window.onload  = function() {
 
   for(var i = 0; i < submarines.length; i++)
   {
-    submarines[i].style.top =  (submarines[i].getBoundingClientRect().y + getRandomInt(180) + 50) / window.screen.availHeight * 100 + "%"; 
-    submarines[i].style.left =  (submarines[i].getBoundingClientRect().x + getRandomInt(200) + 50) / window.screen.availWidth * 100 + "%"; 
+    submarines[i].style.top = (submarines[i].getBoundingClientRect().bottom + submarines[i].getBoundingClientRect().y) / 2 / window.screen.availHeight * 100 + getRandomInt(5) + "%"; 
+    submarines[i].style.left =  (submarines[i].getBoundingClientRect().right + submarines[i].getBoundingClientRect().x) / 2 / window.screen.availWidth * 100 + getRandomInt(5) + "%"; 
   }
 
   for(var i = 0; i < submarines.length; i++)
