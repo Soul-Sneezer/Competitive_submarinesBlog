@@ -135,7 +135,31 @@ html *
     --sub_posy: 50%;
     --sub_posx: 50%;
     --sub_posz: 4;
+}
 
+.search_sub .submarine__body
+{
+}
+
+.search_sub #sub_behind
+{
+}
+
+.search_sub .submarine__propeller
+{
+}
+
+#search
+{
+    padding-top: 20px;
+    padding-left: 25px;
+    position: relative;
+}
+
+#search input
+{
+    width: 200px;
+    font-size: 24px;
 }
 
 .about_sub
@@ -392,7 +416,8 @@ body {
         display: none;
     }
     .ground__container {
-        position: relative;
+        position: absolute;
+        top:90%;
         left: 0%;
         width: 100%;
         height: 100%;
@@ -440,6 +465,7 @@ body {
         margin-top: 300px;
         margin-bottom: 0;
     }
+    
     #desc
     {
         font-size: 12px;
@@ -449,6 +475,7 @@ body {
         margin-top: 0;
     }
 }
+
 .submarine__body p
 {
     padding: 10%;

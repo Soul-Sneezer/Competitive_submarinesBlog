@@ -6,7 +6,7 @@
     <title>Competitive Submarines</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-
+    <script rel="text/javascript" src="search.js"></script>
 </head>
 <body>
     <header>
@@ -38,21 +38,27 @@
                     <div class="submarine__sail-shadow dark2"></div>
                 </div>
                 <div class="submarine__body">
-                </div>
-                <div class="submarine__propeller">
-                    <div class="propeller__perspective">
-                        <div class="submarine__propeller-parts darkOne"></div>
-                        <div class="submarine__propeller-parts lightOne"></div>
+                    <div id="search">
+                        <input type="search" name="search">
                     </div>
                 </div>
-            <div class="bubbles__container">
-                <span class="bubbles bubble-1"></span>
-                <span class="bubbles bubble-2"></span>
-                <span class="bubbles bubble-3"></span>
-                <span class="bubbles bubble-4"></span>
-            </div>
+                <div id="sub_behind">
+                    <div class="submarine__propeller">
+                        <div class="propeller__perspective">
+                            <div class="submarine__propeller-parts darkOne"></div>
+                            <div class="submarine__propeller-parts lightOne"></div>
+                        </div>
+                    </div>
+                    <div class="bubbles__container">
+                        <span class="bubbles bubble-1"></span>
+                        <span class="bubbles bubble-2"></span>
+                        <span class="bubbles bubble-3"></span>
+                        <span class="bubbles bubble-4"></span>
+                    </div>
+                </div>
         </div>
         
+            </div>
         <div class="ground__container">
             <div class="ground ground1">
                 <span class="up-1"></span>
@@ -89,7 +95,6 @@
                 <span class="up-20"></span>
             </div>
         </div>
-    </div>
     </main>
     <footer>
         Copyright © 2024 Competitive Submarines. Rights reserved.

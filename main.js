@@ -14,12 +14,13 @@ function moveSub(sub, link)
 			if(event.which == 2)
 			{
         event.stopPropagation();
+        event.preventDefault();
         move = true;
 			}
 }, true);
 
     sub.addEventListener('mousemove', function(event) {
-      event.preventDefault();
+      event.stopPropagation();
       if(move == true)
       {
         event = event || window.event; // IE-ism
