@@ -18,7 +18,7 @@ function moveSub(sub, link)
         event.stopPropagation();
         event.preventDefault();
                     move = true;
-        }, 1000);
+        }, 500);
 			}
 }, true);
 
@@ -62,6 +62,7 @@ function moveSub(sub, link)
 
 window.onload  = function() {
 
+  var sub_container = document.querySelectorAll(".submarine__container");
 	var submarines = document.querySelectorAll(".submarine__body");
   var propellers = document.querySelectorAll(".submarine__propeller");
   var bubbles = document.querySelectorAll(".bubbles__container");
@@ -69,17 +70,17 @@ window.onload  = function() {
 
   for(var i = 0; i < submarines.length; i++)
   {
-    var rand1 = getRandomInt(30);
+    var rand1 = getRandomInt(60);
     var rand2 = getRandomInt(30);
     submarines[i].style.width = 200 + rand1 + "px";
     submarines[i].style.height = 60 + rand2 + "px";
-    propellers[i].style.left = 300 + rand1 / 2 + "px";
+    propellers[i].style.left = 295 + rand1 / 2 + "px";
     bubbles[i].style.left = 250 + rand1 / 2 + "px";
   }
 
   for(var i = 0; i < submarines.length; i++)
   {
     submarine_links[i].replaceWith(...submarine_links[i].childNodes); 
-    moveSub(submarines[i], i);	
+    moveSub(sub_container[i], i);	
   }
 }
