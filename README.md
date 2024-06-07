@@ -9,3 +9,4 @@ Things left to do:
 - ~~add an animation for the sliding window~~
 
 - ~~some finishing touches(such as finishing that about section, among other things)~~
+- add more decorations(fauna?)
