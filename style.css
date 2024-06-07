@@ -59,6 +59,18 @@ table {
     font-size: 24px;
 }
 
+#container404
+{
+    padding-top: 25%;
+}
+
+#error404
+{
+    font-size: 48px;
+    text-align: center;
+    color:white;
+}
+
 html *
 {
     font-family: Sagona, Arial;
@@ -203,6 +215,21 @@ nav
     display: flex;
     padding-left: 1vh;
     width: 30vh;
+}
+
+.nav-login
+{
+    display: none;
+    position: absolute;
+    left: 90%;
+    font-family: Sagona, Arial;
+    align-items: center;
+    align-content: flex-end;
+    font-size: 24px;
+    color: white;
+    background-color: #08003b;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
 nav a
@@ -904,4 +931,17 @@ body {
         	left: 1050%;
         	opacity: 0;
     	}
+}
+
+.login-box {
+    position: fixed;
+    top: 7%;
+    right: 1%;
+    width: 20%;
+    height: 35%;
+    background-color: #08003b;
+    border-radius: 5%;
+    padding: 10px;
+    color: white;
+    z-index: 2;
 }
