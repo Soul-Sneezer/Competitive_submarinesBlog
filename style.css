@@ -261,6 +261,7 @@ main
 footer
 {
     position: relative;
+    top: 90%;
     min-height: 20px;
     font-family: Sagona, Arial;
     margin-top: auto;
@@ -370,7 +371,7 @@ body {
 
     .ground2 {
         position: inherit;
-        top: 35%;
+        top: 15%;
         width: 100%;
         height: 50%;
         background: #08003b;
