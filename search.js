@@ -14,7 +14,6 @@ function sendFormularData()
 	}	
 
 	xhr.send(formular.value);
-
 }
 
 window.onload = function ()
