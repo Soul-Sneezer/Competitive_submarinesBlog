@@ -1,8 +1,6 @@
 # Competitive_submarinesBlog
 A place to write essays about various things that interest me.
 
-Hosted at: [competitivesubmarines.com](https://competitivesubmarines.com/)
-
 Things left to do:   
 - ~~add mobile support :')~~
 - add description/title over submarines
